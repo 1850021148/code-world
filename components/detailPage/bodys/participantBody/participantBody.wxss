@@ -1,0 +1,77 @@
+/* components/detailPage/bodys/participant/participant.wxss */
+.item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 60px;
+  border-bottom: .5px solid rgb(240, 240, 240);
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.avatar>.image {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+.middle {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0 15px;
+}
+.name,
+.sex {
+  font-weight: bold;
+}
+.name {
+  font-size: 12px;
+}
+.sex {
+  position: relative;
+  top: -3px;
+  left: 5px;
+  font-size: 8px;
+}
+.sex {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background: skyblue;
+  color: white;
+}
+.sex.nv {
+  background: red;
+  transform: rotate(30deg);
+}
+.school {
+  font-size: 9px;
+}
+.auth {
+  padding: 2px 5px;
+  color: white;
+  border-radius: 3px;
+  font-size: 10px;
+}
+.auth.root {
+  background: red;
+}
+.auth.admin {
+  background: rgb(230,208,153);
+}
+.auth.commen {
+  background: rgb(46, 221, 104);
+}

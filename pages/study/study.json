@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "innerBody": "/components/detailPage/innerBody/innerBody",
+    "UI": "/components/studyPage/UI/UI",
+    "foreEnd": "/components/studyPage/foreEnd/foreEnd",
+    "backEnd": "/components/studyPage/backEnd/backEnd",
+    "deploy": "/components/studyPage/deploy/deploy"
+  },
+  "navigationBarTitleText": "代码圈 - 学习技术"
+}

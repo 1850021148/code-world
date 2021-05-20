@@ -1,0 +1,11 @@
+<!--components/detailPage/innerBody/innerBody.wxml-->
+<navBar bind:changeNav="handleChangeNav" list="{{list}}" defaultActiveIndex="{{defaultActiveIndex}}"/>
+
+<view class="wrap">
+  <view 
+    wx:for="{{list}}" wx:key="index"
+    style="display: {{index == activeIndex ? 'block' : 'none'}}"
+    class="page {{index == activeIndex ? 'active' : ''}}">
+    <slot name="{{index}}"></slot>
+  </view>
+</view>

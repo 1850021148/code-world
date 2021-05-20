@@ -1,0 +1,15 @@
+<!--pages/searchActivity/searchActivity.wxml--><!--pages/school/school.wxml-->
+
+<view id="search-outer">
+  <view id="search">
+    <input type="text" placeholder="Search" placeholder-class="placeholder" bind:confirm="handleSearch" />
+  </view>
+</view>
+
+<view class="body">
+
+  <view id="activities" class="padding-container">
+    <text class="t1">相关活动</text>
+    <activities/>
+  </view>
+</view>

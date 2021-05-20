@@ -1,0 +1,132 @@
+/* pages/world/world.wxss */
+
+@import "/asserts/style/iconfont/iconfont.wxss";
+.icon-IMliaotian-shixin:before {
+  font-size: 20px;
+  color: gray;
+}
+
+/* progress-box */
+.progress-box {
+  padding: 0 10px;
+  display: flex;
+  font-size: 12px;
+}
+.progress-box .progress-bar {
+  padding: 0 10px;
+  flex: 1;
+}
+
+.createBlog {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background: rgb(155, 155, 155);
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+.createBlog .icon {
+  font-size: 20px;
+  color: white;
+}
+
+.blog-item {
+  padding-top: 10px;
+}
+.blog-item .header,
+.blog-item .bottom {
+  margin: 0 20px;
+}
+.blog-item .header {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-item .header .user-info {
+  display: flex;
+  align-items: center;
+}
+.blog-item .header .user-info .username {
+  font-size: 12px;
+}
+.blog-item .header .user-info .avatar {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.blog-item .header .following {
+  width: 40px;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+.blog-item:nth-last-child(1) .bottom {
+  border: none;
+}
+.blog-item .bottom {
+  border-bottom: 1px solid lightgray;
+}
+.blog-item .bottom .icons {
+  margin-bottom: 5px;
+}
+.blog-item .bottom .star {
+  margin-left: 6px;
+  position: relative;
+  top: -1px;
+}
+.blog-item .bottom .icon-IMliaotian-shixin {
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+}
+.blog-item .bottom .avatar {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.blog-item .bottom .goods {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.blog-item .bottom .goods .avatar:nth-child(2),
+.blog-item .bottom .goods .avatar:nth-child(3) {
+  margin-left: -16px;
+}
+.blog-item .bottom .goods .text {
+  font-size: 10px;
+}
+.blog-item .bottom .comments .comment-item {
+  font-size: 12px;
+}
+.blog-item .bottom .comments .comment-item .username {
+  margin: 5px 0;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.blog-item .bottom .comments .more {
+  font-size: 10px;
+}
+.blog-item .bottom .more {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+.blog-item .bottom .more .anchor {
+  margin-right: 5px;
+}
+.core-image {
+  width: 100vw;
+  height: 75vw; /* 100 / 300 * 225vw */
+}

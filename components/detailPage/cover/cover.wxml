@@ -1,0 +1,19 @@
+<!--components/detailPage/cover/cover.wxml-->
+<view class="outer-wrap" style="opacity: {{scrollY > 20 ? 1-(scrollY-20)/30 : 1}}">
+  <view class="cover" style="transform: translateY({{scrollY}}px);">
+
+    <image class="image" src="{{detail.cover}}"/>
+
+    <view class="content">
+      <view class="state">{{detail.state.name}}</view>
+      <text class="title mul-ellipsis">{{detail.title}}</text>
+      <view class="site">
+        <mp-icon icon="location" color="white" size="{{12}}" type="field" ext-class="^location-icon"></mp-icon>
+        <text style="margin-left: 5px;">{{detail.siteName}}</text>
+      </view>
+      <text class="id"># ID: {{detail.id}} #</text>
+      <text class="participant"># 已报人数: {{detail.participant.limitTotal}}/{{detail.participant.total}} #</text>
+    </view>
+
+  </view>
+</view>

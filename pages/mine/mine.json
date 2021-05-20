@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "innerBody": "/components/detailPage/innerBody/innerBody",
+    "mp-gallery": "weui-miniprogram/gallery/gallery"
+  },
+  "navigationBarBackgroundColor": "#282828",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "代码圈 - 个人中心"
+}

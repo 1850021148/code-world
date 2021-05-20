@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "banner": "/components/banner/banner",
+    "activities": "/components/activities/activities"
+  },
+  "navigationBarTitleText": "代码圈 - 活动"
+}

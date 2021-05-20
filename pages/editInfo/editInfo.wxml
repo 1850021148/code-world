@@ -1,0 +1,14 @@
+<!--pages/editInfo/editInfo.wxml-->
+
+<view class="body">
+  <view class="title">{{title}}</view>
+  <view class="gender-selector" wx:if="{{mode === 'gender'}}">
+    <radio-group>
+      <radio value="1" checked="{{true}}">男</radio>
+      <radio value="0">女</radio>
+    </radio-group>
+  </view>
+  <editor wx:else class="editor" placeholder="编辑内容" bind:ready="handleEditorReady">{{content}}</editor>
+</view>
+
+<view class="save-btn">{{mode === 'auth' ? '申请认证' : '保存'}}</view>

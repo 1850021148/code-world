@@ -1,0 +1,13 @@
+<!--components/detailPage/navBar/navBar.wxml-->
+<view class="list">
+  <block wx:for="{{list}}" wx:key="index">
+    <view
+      class="link {{index === activeIndex ? 'active' : ''}}"
+      style="width: {{100/(list.length)}}%;"
+      data-index="{{index}}"
+      bind:tap="handleTapNav">
+      {{item.text}}
+  </view>
+  </block>
+</view>
+

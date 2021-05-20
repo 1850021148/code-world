@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "cover": "/components/detailPage/cover/cover",
+    "innerBody": "/components/detailPage/innerBody/innerBody",
+    "detailBody": "/components/detailPage/bodys/detailBody/detailBody",
+    "infoBody": "/components/detailPage/bodys/infoBody/infoBody",
+    "participantBody": "/components/detailPage/bodys/participantBody/participantBody",
+    "addressBody": "/components/detailPage/bodys/addressBody/addressBody"
+  },
+  "navigationBarTitleText": "代码圈 - 活动详情"
+}

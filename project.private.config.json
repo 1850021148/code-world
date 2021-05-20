@@ -1,0 +1,120 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "mine页面",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "school页面",
+          "pathName": "pages/school/school",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "detail页面",
+          "pathName": "pages/detail/detail",
+          "query": "id=1&activeIndex=2",
+          "scene": null
+        },
+        {
+          "name": "study页面",
+          "pathName": "pages/study/study",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "world页面",
+          "pathName": "pages/world/world",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "createActivity页面",
+          "pathName": "pages/createActivity/createActivity",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "otherMine页面",
+          "pathName": "pages/otherMine/otherMine",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "userList",
+          "pathName": "pages/userList/userList",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "createBlog",
+          "pathName": "pages/createBlog/createBlog",
+          "query": "image=https://profile.csdnimg.cn/3/7/A/0_ef_ef",
+          "scene": null
+        },
+        {
+          "name": "comments",
+          "pathName": "pages/comments/comments",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "selfInfo",
+          "pathName": "pages/selfInfo/selfInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "editInfo",
+          "pathName": "pages/editInfo/editInfo",
+          "query": "title=%E4%BB%8B%E7%BB%8D%E8%87%AA%E5%B7%B1&content=%E5%98%BF%E5%98%BF%E5%98%BF",
+          "scene": null
+        },
+        {
+          "name": "editAvatar",
+          "pathName": "pages/editAvatar/editAvatar",
+          "query": "image=https://profile.csdnimg.cn/3/7/A/0_ef_ef",
+          "scene": null
+        },
+        {
+          "name": "上传图片后的world",
+          "pathName": "pages/world/world",
+          "query": "mdoe=send&image=https://profile.csdnimg.cn/3/7/A/0_ef_ef",
+          "scene": null
+        },
+        {
+          "name": "editMineBg",
+          "pathName": "pages/editMineBg/editMineBg",
+          "query": "image=https://profile.csdnimg.cn/3/7/A/0_ef_ef",
+          "scene": null
+        },
+        {
+          "name": "searchActivity",
+          "pathName": "pages/searchActivity/searchActivity",
+          "query": "keyword=%E5%89%8D%E7%AB%AF",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

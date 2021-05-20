@@ -1,0 +1,8 @@
+/* components/detailPage/bodys/detailBody/detailBody.wxss */
+.none {
+  padding: 0 15px;
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 12px;
+}

@@ -1,0 +1,63 @@
+<!--pages/mine/mine.wxml-->
+
+<view wx:if="{{!hasUserInfo}}" class="nothasUserInfo">
+  <image class="logo" src="/asserts/images/logo.png"></image>
+  <button open-type="getUserInfo" bindtap="handleGetUserInfo">微信登录</button>
+  <text class="tip">登录代表您已同意 <text style="color: red;">代码圈用户协议</text>、<text style="color: red;">隐私协议</text></text>
+</view>
+
+<view wx:else>
+  <view id="header">
+    <image class="bg" mode="aspectFill" src="{{info.bg}}" bind:tap="handleShowBigBg"></image>
+    <view class="inner-box">
+
+      <view class="top">
+        <image id="avatar" src="{{info.avatar}}" bind:tap="showBigAvatar" data-image="{{info.avatar}}" />
+        <view class="right">
+          <button class="edit" bind:tap="handleEdit">编辑资料</button>
+          <button class="friends" bind:tap="toUserListPage">+</button>
+        </view>
+      </view>
+
+      <text class="username">{{userInfo.nickName}}</text>
+
+      <view class="attestation">
+        <text class="content">认证：{{info.auth}}</text>
+        <text class="go">申请认证 ></text>
+      </view>
+
+      <view class="nav-bar">
+        <view class="item">
+          <image class="icon" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+          <text class="text">待办</text>
+        </view>
+        <view class="item">
+          <image class="icon" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+          <text class="text">通知</text>
+        </view>
+        <view class="item">
+          <image class="icon" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+          <text class="text">活动</text>
+        </view>
+        <view class="item">
+          <image class="icon" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+          <text class="text">部落</text>
+        </view>
+        <view class="item">
+          <image class="icon" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+          <text class="text">数据</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <mp-gallery bind:tap="hidBigAvatar" show="{{bigAvatarIsShow}}" img-urls="{{[info.avatar]}}" current="0" showDelete="{{false}}"></mp-gallery>
+
+  <view class="bg-gallery" wx:if="{{showBigBg}}" bind:tap="handleHidBigBg">
+    <image class="image" mode="aspectFit" src="{{info.bg}}"></image>
+    <button class="update-btn" size="mini" catch:tap="handleUpdateBg">更换</button>
+  </view>
+
+  <innerBody list="{{navBarList}}"/>
+
+</view>

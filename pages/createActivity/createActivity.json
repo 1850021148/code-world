@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "DateTimePicker": "/components/DateTimePicker/DateTimePicker"
+  },
+  "navigationBarTitleText": "代码圈 - 发布活动"
+}

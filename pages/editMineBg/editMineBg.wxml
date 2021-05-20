@@ -1,0 +1,9 @@
+<!--pages/editMineBg/editMineBg.wxml-->
+
+<view class="body">
+  <image class="image" mode="aspectFill" src="{{image}}"></image>
+  <view class="bar">
+    <view class="cancle" bind:tap="handleCancle">取消</view>
+    <view class="sure" bind:tap="handleSure">确定</view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<!-- <innerBody list="{{navBarList}}" defaultActiveIndex="{{1}}">
+  <view slot="{{0}}">
+    <UI/>
+  </view>
+  <view slot="{{1}}">
+    <foreEnd/>
+  </view>
+  <view slot="{{2}}">
+    <backEnd/>
+  </view>
+  <view slot="{{3}}">
+    <deploy/>
+  </view>
+</innerBody> -->
+功能尚未开放，敬请期待

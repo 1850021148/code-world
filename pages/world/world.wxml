@@ -1,0 +1,50 @@
+<!--pages/world/world.wxml-->
+
+<mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{show}}" animated="{{animated}}"></mp-loading>
+
+<view class="progress-box" wx:if="{{showProgress}}">
+  <text class="title">上传进度 {{progressPercent}}%</text>
+  <progress class="progress-bar" percent="{{progressPercent}}}" stroke-width="3"/>
+</view>
+
+<view class="createBlog">
+  <text class="icon" bind:tap="handelCreateBlog">+</text>
+</view>
+<view class="blog-list">
+  <view class="blog-item" wx:for="{{blogs}}" :key="item.id">
+    <view class="header">
+      <view class="user-info" bind:tap="toOtherCenter" data-id="{{item.author.id}}">
+        <image class="avatar" src="{{item.author.avatar}}"></image>
+        <text class="username">{{item.author.name}}</text>
+      </view>
+      <view wx:if="{{item.author.following}}" class="following">关注</view>
+    </view>
+    <image class="core-image" src="{{item.image}}" bind:tap="onImageClick" data-image="{{item.image}}"></image>
+    <view class="bottom">
+      <view class="icons">
+        <mp-icon class="like" type="field" icon="like" color="{{item.addGood?'red':'gray'}}" size="{{25}}"></mp-icon>
+        <mp-icon class="star" type="field" icon="star" color="{{item.collect?'red':'gray'}}" size="{{25}}"></mp-icon>
+        <text class="iconfont icon-IMliaotian-shixin" bind:tap="handleToComments"></text>
+      </view>
+      <view class="goods">
+        <image class="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+        <image class="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+        <image class="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+        <text class="text">已收到{{item.goodsNum}}个赞</text>
+      </view>
+      <view class="comments">
+        <view class="comment-item">
+          <text class="username" bind:tap="toOtherCenter" data-id="{{item.author.id}}">{{item.comments[0].user.name}}</text>
+          <text class="content">{{item.comments[0].content}}</text>
+        </view>
+        <view class="more">
+          <text class="anchor" bind:tap="handleToComments">查看全部</text>
+          <text class="total">{{item.comments.length}}条评论</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<mp-actionSheet bind:actiontap="handleDownloadImage" show="{{showActionsheet}}" actions="{{activeSheetGroups}}" title="">
+</mp-actionSheet>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "innerBody": "/components/detailPage/innerBody/innerBody"
+  },
+  "navigationBarTitleText": "代码圈 - 个人中心",
+  "navigationBarBackgroundColor": "#282828",
+  "navigationBarTextStyle": "white"
+}

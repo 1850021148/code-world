@@ -1,0 +1,45 @@
+/* pages/createBlog/createBlog.wxss */
+
+@import "/asserts/style/iconfont/iconfont.wxss";
+
+.nav-bar {
+  padding: 5px 15px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 -1px 10px gray;
+}
+.nav-bar .cancle {
+  color: gray;
+}
+.nav-bar .send {
+  color: red;
+}
+.core {
+  margin: 10px 20px;
+}
+.core .content,
+.core .location {
+  border-bottom: 1px solid lightgray;
+}
+.core .content {
+  height: 80px;
+  min-height: 80px;
+}
+.core .location {
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  color: rgb(150, 150, 150);
+}
+.core .location .icon-dizhi {
+  margin-right: 5px;
+}
+.core .location .arrow {
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}

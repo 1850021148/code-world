@@ -1,0 +1,58 @@
+/* pages/selfInfo/selfInfo.wxss */
+@import "../../asserts/style/iconfont/iconfont.wxss";
+.body {
+  padding: 0 20px;
+}
+.row:nth-child(1) {
+  border-top: none;
+}
+.row.avatar-box {
+  .right {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .icon-paizhao {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 14px;
+      color: white;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.row {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .content {
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+    max-width: 200px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}
+
+.logout {
+  margin-top: 15px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: rgb(235, 235, 235);
+  &:hover {
+    background: lightgray;
+  }
+}

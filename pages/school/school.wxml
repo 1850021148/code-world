@@ -1,0 +1,20 @@
+<!--pages/school/school.wxml-->
+
+<button id="create" bind:tap="handleCreateActivity">发布活动</button>
+
+<view id="search-outer">
+  <view id="search">
+    <input type="text" placeholder="Search" placeholder-class="placeholder" bind:confirm="handleSearch" />
+  </view>
+</view>
+
+<view class="body">
+  <view id="banner">
+    <banner/>
+  </view>
+
+  <view id="activities" class="padding-container">
+    <text class="t1">活动列表</text>
+    <activities/>
+  </view>
+</view>

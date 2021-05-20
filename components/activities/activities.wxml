@@ -1,0 +1,11 @@
+<!--components/acticities/activities.wxml-->
+<view class="body">
+  <view class="item" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}" bindtap="handleLinkTo">
+    <view class="cover">
+      <image class="image" src="{{item.cover}}"/>
+      <text class="state">{{item.stateName}}</text>
+    </view>
+    <text class="time">{{item.time.start}} 至 {{item.time.end}}</text>
+    <text class="title mul-ellipsis">{{item.title}}</text>
+  </view>
+</view>

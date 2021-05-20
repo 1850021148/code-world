@@ -1,0 +1,58 @@
+<!--components/detailPage/bodys/infoBody/infoBody.wxml-->
+<view class="container">
+
+  <view class="time item">
+    <text class="title">时间范围</text>
+    <view class="content">
+      <view class="col">
+        <text>报名时间</text>
+        <text class="time">xxxx.xx.xx xx:xx-xxxx.xx.xx xx:xx</text>
+      </view>
+      <view class="col">
+        <text>活动时间</text>
+        <text class="time">xxxx.xx.xx xx:xx-xxxx.xx.xx xx:xx</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="level item">
+    <text class="title">活动级别</text>
+    <view class="content">
+      <view class="col">
+        <text>当前活动级别为</text>
+        <text class="keyword">学校级</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="participant item">
+    <text class="title">合适人群</text>
+    <view class="content">
+      <view class="col">
+        <text>当前活动级别为</text>
+        <text class="keyword">xxxxx人群</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="participant item">
+    <text class="title">报名人数</text>
+    <view class="content">
+      <view class="col">
+        <text>当前活动报名人数限制为</text>
+        <text class="keyword">200</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="label item">
+    <text class="title">活动标签</text>
+    <view class="content">
+      <view class="col">
+        <text>当前活动标签为</text>
+        <text class="keyword">程序员讲座</text>
+      </view>
+    </view>
+  </view>
+
+</view>

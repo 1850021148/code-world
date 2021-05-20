@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/school/school",
+    "pages/study/study",
+    "pages/world/world",
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/createActivity/createActivity",
+    "pages/otherMine/otherMine",
+    "pages/userList/userList",
+    "pages/createBlog/createBlog",
+    "pages/comments/comments",
+    "pages/selfInfo/selfInfo",
+    "pages/editInfo/editInfo",
+    "pages/editAvatar/editAvatar",
+    "pages/showBigImage/showBigImage",
+    "pages/editMineBg/editMineBg",
+    "pages/searchActivity/searchActivity",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "代码圈",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1afa29",
+    "list": [
+      {
+        "pagePath": "pages/school/school",
+        "text": "活动",
+        "iconPath": "asserts/images/tabs/school-icon.png",
+        "selectedIconPath": "asserts/images/tabs/selected-school-icon.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "asserts/images/tabs/study-icon.png",
+        "selectedIconPath": "asserts/images/tabs/selected-study-icon.png"
+      },
+      {
+        "pagePath": "pages/world/world",
+        "text": "世界",
+        "iconPath": "asserts/images/tabs/world-icon.png",
+        "selectedIconPath": "asserts/images/tabs/selected-world-icon.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "asserts/images/tabs/mine-icon.png",
+        "selectedIconPath": "asserts/images/tabs/selected-mine-icon.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

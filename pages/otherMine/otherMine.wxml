@@ -1,0 +1,49 @@
+<!--pages/otherMine/other.wxml-->
+<view id="header">
+  <image class="bg" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+  <view class="inner-box">
+
+    <view class="top">
+      <image id="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"/>
+      <view class="right">
+        <button class="edit">取消关注</button>
+        <button class="friends">+</button>
+      </view>
+    </view>
+
+    <text class="username">周文鲜</text>
+
+    <view class="attestation">
+      <text class="content">认证：福州理工学院周文鲜</text>
+      <text class="go">个人资料 ></text>
+    </view>
+
+    <view class="nav-bar">
+      <view class="item">
+        <text class="number">0</text>
+        <text class="title">获赞</text>
+      </view>
+      <view class="item">
+        <text class="number">1</text>
+        <text class="title">粉丝</text>
+      </view>
+      <view class="item">
+        <text class="number">6</text>
+        <text class="title">动态</text>
+      </view>
+      <view class="item">
+        <text class="number">0</text>
+        <text class="title">名片</text>
+      </view>
+    </view>
+
+    <text class="detail">这位同学超懒，什么都没留下...</text>
+
+    <view class="label-list">
+      <view class="label-item">UI</view>
+      <view class="label-item nv">女生</view>
+    </view>
+  </view>
+</view>
+
+<innerBody list="{{navBarList}}"/>

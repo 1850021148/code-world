@@ -1,0 +1,22 @@
+<!--pages/selfInfo/selfInfo.wxml-->
+
+<view class="body">
+  <view class="row avatar-box">
+    <text class="title">头像</text>
+    <view class="right" bind:tap="handleEditAvatar">
+      <image class="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+      <text class="iconfont icon-paizhao"></text>
+    </view>
+  </view>
+  <block wx:for="{{rows}}" :key="index">
+    <view class="row" data-index="{{index}}" bind:tap="handleEdit" data-mode="{{item.mode}}">
+      <text class="title">{{item.title}}</text>
+      <text class="content">{{item.content}}</text>
+    </view>
+  </block>
+</view>
+
+<view class="logout">退出登录</view>
+
+<mp-actionSheet bindactiontap="onActionTap" show="{{showActionsheet}}" actions="{{activeSheetGroups}}" title="">
+</mp-actionSheet>

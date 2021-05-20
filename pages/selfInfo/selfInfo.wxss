@@ -1,0 +1,102 @@
+/* pages/selfInfo/selfInfo.wxss */
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2501594 */
+  src: url('//at.alicdn.com/t/font_2501594_cv0d02c68c8.woff2?t=1620529443553') format('woff2'), url('//at.alicdn.com/t/font_2501594_cv0d02c68c8.woff?t=1620529443553') format('woff'), url('//at.alicdn.com/t/font_2501594_cv0d02c68c8.ttf?t=1620529443553') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-paizhao:before {
+  content: "\e635";
+}
+.icon-dizhi:before {
+  content: "\e646";
+}
+.icon-IMliaotian-shixin:before {
+  content: "\e72a";
+}
+.icon-daxue:before {
+  content: "\e67a";
+}
+.icon-daxue1:before {
+  content: "\e698";
+}
+.icon-World-WideWeb:before {
+  content: "\e878";
+}
+.icon-World-WideWeb1:before {
+  content: "\ecb8";
+}
+.icon-user:before {
+  content: "\e610";
+}
+.icon-gerenzhongxin:before {
+  content: "\e606";
+}
+.icon-jiazai:before {
+  content: "\e619";
+}
+.icon-github:before {
+  content: "\e691";
+}
+.icon-github1:before {
+  content: "\e6b7";
+}
+.body {
+  padding: 0 20px;
+}
+.row:nth-child(1) {
+  border-top: none;
+}
+.row.avatar-box .right {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.row.avatar-box .right .avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.row.avatar-box .right .icon-paizhao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+.row {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+}
+.row .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.row .content {
+  color: #b4b4b4;
+  font-size: 12px;
+  max-width: 200px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.logout {
+  margin-top: 15px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #ebebeb;
+}
+.logout:hover {
+  background: lightgray;
+}

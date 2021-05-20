@@ -1,0 +1,10 @@
+/* pages/editAvatar/editAvatar.wxss */
+.avatar {
+  margin: 10vw;
+  width: 80vw;
+  height: 80vw;
+  border-radius: 50%;
+}
+.sure-btn {
+  margin-top: 20px;
+}

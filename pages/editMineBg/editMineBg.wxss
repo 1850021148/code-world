@@ -1,0 +1,24 @@
+/* pages/editMineBg/editMineBg.wxss */
+
+.body {
+  height: 100vh;
+  background: black;
+}
+
+.image {
+  margin-top: 40vh;
+  height: 106px;
+}
+
+.bar {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}

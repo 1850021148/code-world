@@ -1,0 +1,36 @@
+<!--pages/userList/userList.wxml-->
+<div class="wrap">
+
+  <view class="sticky">
+
+    <view id="search">
+      <text class="icon">{{'<'}}</text>
+      <input type="text" placeholder="Search" placeholder-class="placeholder" />
+    </view>
+
+    <view class="bar">
+      <text class="bar-item active">关注·2</text>
+      <text class="bar-item">粉丝</text>
+      <text class="bar-item">屏蔽</text>
+    </view>
+
+    <view class="user-list">
+      <view wx:for="{{list}}" wx:key="item.user.id" 
+        class="item" data-id="{{item.user.id}}" bind:tap="toOtherCenter">
+        <view class="avatar">
+          <image class="image" src="{{item.user.avatar}}"></image>
+        </view>
+        <view class="middle">
+          <view class="user">
+            <text class="name">{{item.user.name}}</text>
+            <text class="sex {{item.user.sex ? '' : 'nv'}}">{{item.user.sex ? '♂' : '♀'}}</text>
+          </view>
+          <view class="school">{{item.user.school}}</view>
+        </view>
+        <view class="follow">已关注</view>
+      </view>
+    </view>
+
+  </view>
+
+</div>

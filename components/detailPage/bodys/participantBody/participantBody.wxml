@@ -1,0 +1,15 @@
+<!--components/detailPage/bodys/participant/participant.wxml-->
+<view wx:for="{{list}}" wx:key="item.user.id" 
+  class="item" data-id="{{item.user.id}}" bind:tap="toOtherCenter">
+  <view class="avatar">
+    <image class="image" src="{{item.user.avatar}}"></image>
+  </view>
+  <view class="middle">
+    <view class="user">
+      <text class="name">{{item.user.name}}</text>
+      <text class="sex {{item.user.sex ? '' : 'nv'}}">{{item.user.sex ? '♂' : '♀'}}</text>
+    </view>
+    <view class="school">{{item.user.school}}</view>
+  </view>
+  <view class="auth {{['root','admin','commen'][item.user.auth.code]}}">{{item.user.auth.text}}</view>
+</view>

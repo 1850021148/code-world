@@ -1,0 +1,52 @@
+<!--pages/detail/detail.wxml-->
+<cover detail="{{detail}}" scrollY="{{scrollY}}"/>
+
+<innerBody list="{{navBarList}}" defaultActiveIndex="{{1}}">
+  <view slot="{{0}}">
+    <detailBody/>
+  </view>
+  <view slot="{{1}}">
+    <infoBody/>
+  </view>
+  <view slot="{{2}}">
+    <participantBody/>
+  </view>
+  <view slot="{{3}}">
+    <addressBody/>
+  </view>
+</innerBody>
+
+<view style="height: 100px;"></view>
+
+<view class="seek-btn">活动咨询</view>
+
+<view class="bottom-bar">
+
+  <view class="state">
+    <block wx:if="{{false}}">
+      <text class="col">倒计时</text>
+      <text class="col">xx天 xx时 xx分 xx秒</text>
+    </block>
+    <block wx:elif="false">
+      <text class="col">活动报名人数已满</text>
+    </block>
+    <block wx:elif="true">
+      <text class="col">当前时间不在报名时间内</text>
+    </block>
+    <block wx:else>
+      <text class="col">活动已结束</text>
+    </block>
+  </view>
+
+  <view class="join">
+    <block wx:if="true">
+      <view class="able">报名</view>
+    </block>
+    <block wx:elif="true">
+      <view>进行中</view>
+    </block>
+    <block wx:else>
+      <view>已结束</view>
+    </block>
+  </view>
+</view>

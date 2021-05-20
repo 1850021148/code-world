@@ -1,0 +1,72 @@
+/* pages/createActivity/createActivity.wxss */
+input {
+  width: 100%;
+}
+.placeholderClass {
+  color: lightgray;
+}
+view {
+  width: 100%;
+}
+
+.send-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 2px 5px gray;
+  font-size: 14px;
+  color: rgb(230,208,153);
+  font-weight: bold;
+}
+
+.container {
+  padding: 0 20px;
+  font-size: 12px;
+  margin-bottom: 50px;
+  height: calc( 100vh - 40px );
+  overflow: auto;
+}
+.item {
+  padding: 20px 0;
+  border-bottom: .5px solid rgb(240, 240, 240);
+}
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.content {
+  padding-top: 10px;
+}
+.level .content {
+  display: flex;
+}
+.level .label {
+  margin-right: 10px;
+  width: 50px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: lightgray;
+  color: white;
+  font-size: 10px;
+}
+.time .start,
+.time .end {
+  position: relative;
+  display: inline;
+}
+.time .key {
+  font-weight: bold;
+}
+.time .start .picker,
+.time .end .picker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

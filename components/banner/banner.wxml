@@ -1,0 +1,6 @@
+<!--components/banner/banner.wxml-->
+<my-swiper size="{{banner.length}}" class="banner">
+  <block wx:for="{{banner}}" wx:key="index">
+    <image class="image" src="{{item.img}}" slot="{{index}}"/>
+  </block>
+</my-swiper>

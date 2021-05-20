@@ -1,0 +1,69 @@
+<!--pages/createActivity/createActivity.wxml-->
+<view class="container">
+
+  <view class="time item">
+    <text class="title">活动名称</text>
+    <view class="content">
+      <input type="text" placeholder="请输入活动名称，最多可输入30字" placeholder-class="placeholderClass" />
+    </view>
+  </view>
+
+  <view class="level item">
+    <text class="title">活动描述</text>
+    <view class="content">
+      <input type="text" placeholder="请输入活动描述" placeholder-class="placeholderClass" />
+    </view>
+  </view>
+
+  <view class="level item">
+    <text class="title">活动级别</text>
+    <view class="content">
+      <view class="label">私人活动</view>
+      <view class="label">校级</view>
+      <view class="label">世界级</view>
+    </view>
+  </view>
+
+  <view class="time item">
+    <text class="title">活动时间</text>
+    <view class="content">
+      <view class="start">
+        <text><text class="key">开始时间：</text> 2020-02-29 00：00：00</text>
+        <DateTimePicker class="start-picker picker" title="开始时间"/>
+      </view>
+      <view class="br"></view>
+      <view class="end">
+        <text><text class="key">结束时间：</text> 2020-02-29 00：00：00</text>
+        <DateTimePicker class="end-picker picker" title="结束时间"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="participant item">
+    <text class="title">合适人群</text>
+    <view class="content">
+      <input type="text" placeholder="请输入合适人群(默认为所有人)，最多输入10字" placeholder-class="placeholderClass" />
+    </view>
+  </view>
+
+  <view class="number item">
+    <text class="title">报名人数</text>
+    <view class="content">
+      <picker bindchange="handleChangeNumber" mode="multiSelector" range="{{picker.range}}" value="{{picker.value}}">
+        <view class="weui-select">{{picker.range[0][picker.value[0]]}} 到 {{picker.range[2][picker.value[2]]}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="label item">
+    <text class="title">活动标签</text>
+    <view class="content">
+      <view class="col">
+        <text class="keyword">技术讲座</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="send-btn">发布活动</view>

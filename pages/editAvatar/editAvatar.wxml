@@ -1,0 +1,4 @@
+<!--pages/editAvatar/editAvatar.wxml-->
+
+<image class="avatar" src="{{image}}"></image>
+<button class="sure-btn">确定</button>

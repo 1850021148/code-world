@@ -1,0 +1,126 @@
+/* pages/userList/userList.wxss */
+
+.wrap {
+  padding: 0 15px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 0 15px;
+  z-index: 100;
+  padding-top: 0;
+  background: white;
+}
+
+/* search-input */
+#search {
+  display: flex;
+  border-radius: 5px;
+  padding: 4px 10px;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 3px rgb(220, 220, 220);
+  font-size: 12px;
+}
+#search .placeholder {
+  color: rgb(188,188,188);
+}
+#search .icon {
+  margin-top: -3px;
+  width: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(188,188,188);
+}
+#search input {
+  flex: 1;
+}
+
+/* bar */
+.bar {
+  padding: 10px 0;
+  display: flex;
+}
+.bar-item {
+  margin-right: 8px;
+  border-radius: 3px;
+  padding: 2px 8px;
+  border: 1px solid lightgray;
+  background: white;
+  color: black;
+  font-size: 14px;
+}
+.bar-item.active {
+  color: white;
+  background: rgb(243,187,102);
+  border: none;
+}
+
+/* user-list */
+.user-list .item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 60px;
+  border-bottom: .5px solid rgb(240, 240, 240);
+}
+.user-list .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.user-list .avatar>.image {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+.user-list .middle {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0 15px;
+}
+.user-list .name,
+.user-list .sex {
+  font-weight: bold;
+}
+.user-list .name {
+  font-size: 12px;
+}
+.user-list .sex {
+  position: relative;
+  top: -3px;
+  left: 5px;
+  font-size: 8px;
+}
+.user-list .sex {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background: skyblue;
+  color: white;
+}
+.user-list .sex.nv {
+  background: red;
+  transform: rotate(30deg);
+}
+.user-list .school {
+  font-size: 9px;
+}
+.user-list .follow {
+  padding: 2px 5px;
+  color: lightgray;
+  border-radius: 3px;
+  font-size: 10px;
+}

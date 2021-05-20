@@ -1,0 +1,25 @@
+<!--pages/comments/comments.wxml-->
+<view class="comment-list">
+  <view class="comment-item" wx:for="{{3}}">
+    <image class="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+    <view class="right">
+      <view class="top">
+        <text class="username">blue小叶子</text>
+        <text class="content">这这这!</text>
+        <mp-icon class="like" type="field" icon="like" color="gray" size="{{18}}"></mp-icon>
+      </view>
+      <view class="bottom">
+        <text class="time">20小时前</text>
+        <text class="reply">回复</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="send-comment">
+  <image class="avatar" src="https://profile.csdnimg.cn/3/7/A/0_ef_ef"></image>
+  <view class="edit-box">
+    <!-- <editor class="edit-text" placeholder="添加评论..."></editor> --><editor class="edit-text" placeholder="回复 林赌神啊："></editor>
+    <view class="send-btn">发布</view>
+  </view>
+</view>

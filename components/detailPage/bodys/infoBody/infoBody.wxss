@@ -1,0 +1,23 @@
+/* components/detailPage/bodys/infoBody/infoBody.wxss */
+.container {
+  padding: 0 20px;
+  font-size: 12px;
+}
+.item {
+  padding: 20px 0;
+  border-bottom: .5px solid rgb(240, 240, 240);
+}
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.content {
+  padding-top: 10px;
+}
+.col {
+  display: flex;
+  justify-content: space-between;
+}
+.keyword {
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+<!--components/mySwiper/mySwiper.wxml-->
+<swiper class="swiper" previous-margin="30px" next-margin="30px" circular autoplay="{{true}}" bindchange="swiperChange">
+  <swiper-item wx:for="{{size}}" wx:key="index">
+    <view class="item-box {{swiperIndex == index ? 'active' : ''}}">
+      <slot name="{{index}}"></slot>
+    </view>
+  </swiper-item>
+</swiper>

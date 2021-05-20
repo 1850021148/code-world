@@ -1,0 +1,11 @@
+/* components/detailPage/innerBody/innerBody.wxss */
+.wrap {
+  width: 100%;
+  min-height: 750rpx;
+}
+.page {
+  display: none;
+}
+.page.active {
+  display: block !important;
+}
